@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="appPrincipal">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+  </head>
+  <body ng-controller="controllerPrincipal as vm">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <img src="http://www.desarrollohidrocalido.com/wp-content/uploads/2014/12/logo.png" alt="www.desarrollohidrocalido.com">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Lista de Maestros</h3>
+        <ul class="list-group">
+          <li class="list-group-item" ng-repeat="oListaMaestros in vm.listaMaestros">{{oListaMaestros.nombre}}</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Lista de Alumnos</h3>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="oListaALumnos in vm.listaAlumnos">{{oListaALumnos.nombre}}</li>
+        </ul>
+      </div>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="lib/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="lib/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="js/controllerPrincipal.js"></script>
+    <script src="js/services.js"></script>
+
+  </body>
+</html>
